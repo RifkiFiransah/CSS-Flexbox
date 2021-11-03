@@ -1,0 +1,162 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #888;
+  padding-bottom: 500px;
+  line-height: 1.40;
+}
+
+.container-satu {
+  width: 450px;
+  margin: 10px auto;
+  background-color: #eee;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.container-satu .utama {
+  order: 2;
+}
+
+.container-satu .sidebar-satu {
+  order: 1;
+}
+
+.container-satu .sidebar-dua {
+  order: 3;
+}
+/* Akhir Latihan 1 */
+
+
+/* latihan 2 */
+.container-dua {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.layanan {
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.layanan.satu { background-color: aquamarine;}
+.layanan.dua { background-color: salmon;}
+.layanan.tiga { background-color: seagreen;}
+
+/* Latihan 3 */
+.container-tiga {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.thumbnail 8:55 AM 8/26/2021{
+  width: 40%;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+/* Latihan 4 */
+.container-empat {
+  width: 200px;
+  margin: 50px auto;
+}
+
+.card {
+  border: 3px solid #444;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card .header {
+  height: 150px;
+  background-color: #444;
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card.besar {
+  transform: scale(1.1);
+}
+
+/* latihan 5 */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 5px solid black;
+  display: flex;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  color: white;
+  text-align: center;
+  margin: auto;
+  display: flex;
+}
+
+.kotak span {
+  margin: auto;
+}
+
+
+/* Responsive */
+@media (min-width: 600px) {
+  .container-satu {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+  }
+  .container-satu .utama {
+    flex: 3;
+  }
+  .container-satu .sidebar-satu {
+    flex: 1;
+  }
+  .container-satu .sidebar-dua {
+    flex: 1;
+  }
+  .container-dua {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .layanan {
+    width: 30%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .thumbnail {
+    width: 30%;
+  }
+  .thumbnail img {
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  .container-empat {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card .header {
+    height: 300px;
+  }
+}
